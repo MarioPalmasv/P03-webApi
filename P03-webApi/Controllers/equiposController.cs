@@ -77,6 +77,8 @@ namespace P03_webApi.Controllers
                                    ThenBy(resultado => resultado.marca_id).
                                    ThenByDescending(resultado => resultado.tipo_equipo_id).ToList();
 
+            //con lo anterior ya se puede hacer consultas medio complejas
+
             if (listaEquipos.Count == 0)
             {
                 return NotFound();
